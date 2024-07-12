@@ -45,5 +45,3 @@ def portscanner(port):
     print("couldnt scan port in time!")
 for port in range(start_port, end_port + 1):
   signal.alarm(5)
-  portscanner(port)
-s.close()
