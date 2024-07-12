@@ -5,7 +5,7 @@ def handler(signum, frame):
 signal.signal(signal.SIGALRM, handler)
 signal.alarm(2)
 # Generate ASCII art text
-maintext = "
+font = """
  ██▓███   ▒█████   ██▀███  ▄▄▄█████▓                              
 ▓██░  ██▒▒██▒  ██▒▓██ ▒ ██▒▓  ██▒ ▓▒                              
 ▓██░ ██▓▒▒██░  ██▒▓██ ░▄█ ▒▒ ▓██░ ▒░                              
@@ -26,8 +26,8 @@ maintext = "
 ░  ░  ░  ░          ░   ▒      ░   ░ ░    ░   ░ ░    ░     ░░   ░ 
       ░  ░ ░            ░  ░         ░          ░    ░  ░   ░     
          ░                                                        
-"
-print(maintext)
+"""
+print(font)
 print("***************************")
 print("Made by Sai")
 print("****************************")
