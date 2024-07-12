@@ -3,7 +3,6 @@ import signal
 def handler(signum, frame):
   raise TimeoutError("ranout of time")
 signal.signal(signal.SIGALRM, handler)
-signal.alarm(2)
 # Generate ASCII art text
 font = """
  ██▓███   ▒█████   ██▀███  ▄▄▄█████▓                              
